@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="DuplicateIds">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="411dp"
+        android:layout_height="734dp"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="378dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:text="Simple Calculator"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/editTextNumberDecimal"
+            android:layout_width="391dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="412dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="28dp"
+            android:text="÷"
+            app:layout_constraintBottom_toTopOf="@+id/buttonm"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="6"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toStartOf="@+id/buttonminus" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="9"
+            app:layout_constraintBottom_toTopOf="@+id/button6"
+            app:layout_constraintEnd_toStartOf="@+id/buttonm" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="1"
+            app:layout_constraintBottom_toTopOf="@+id/buttonpm"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="2"
+            app:layout_constraintBottom_toTopOf="@+id/button0"
+            app:layout_constraintEnd_toStartOf="@+id/button3" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="3"
+            app:layout_constraintBottom_toTopOf="@+id/buttondot"
+            app:layout_constraintEnd_toStartOf="@+id/buttonA" />
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="+"
+            app:layout_constraintBottom_toTopOf="@+id/buttone"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="+/- "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="36dp"
+            android:text="="
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/buttondot" />
+
+        <Button
+            android:id="@+id/buttonmod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="%"
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintEnd_toStartOf="@+id/buttond" />
+
+        <Button
+            android:id="@+id/buttonm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="×"
+            app:layout_constraintBottom_toTopOf="@+id/buttonminus"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="7"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="8"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintEnd_toStartOf="@+id/button9" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="4"
+            app:layout_constraintBottom_toTopOf="@+id/button1"
+            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="28dp"
+            android:text="5"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/button6" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="Clear"
+            app:layout_constraintBottom_toTopOf="@+id/button7"
+            app:layout_constraintEnd_toStartOf="@+id/buttoncurly"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttoncurly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="28dp"
+            android:text="()"
+            app:layout_constraintBottom_toTopOf="@+id/button8"
+            app:layout_constraintEnd_toStartOf="@+id/buttonmod" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="28dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttondot" />
+
+        <Button
+            android:id="@+id/buttondot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="."
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="207dp" />
+
+        <Button
+            android:id="@+id/buttonminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="28dp"
+            android:text="−"
+            app:layout_constraintBottom_toTopOf="@+id/buttonA"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+package com.example.simplecalculator;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText editTextNumberDecimal;
+    Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonA, buttonminus, buttonm, buttond, buttonpm, buttonC, buttone, buttonmod, buttoncurly, buttondot, buttonequal, buttonclear;
+    String currentInput = "";
+    String currentOperator = "";
+    double num1 = 0, num2 = 0;
+
+    @SuppressLint({"SetTextI18n", "CutPasteId"})
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        editTextNumberDecimal = findViewById(R.id.editTextNumberDecimal);
+
+        button0 = findViewById(R.id.button0);
+        button1 = findViewById(R.id.button1);
+        button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button3);
+        button4 = findViewById(R.id.button4);
+        button5 = findViewById(R.id.button5);
+        button6 = findViewById(R.id.button6);
+        button7 = findViewById(R.id.button7);
+        button8 = findViewById(R.id.button8);
+        button9 = findViewById(R.id.button9);
+        buttondot = findViewById(R.id.buttondot);
+        buttonA = findViewById(R.id.buttonA);
+        buttonminus = findViewById(R.id.buttonminus);
+        buttonm = findViewById(R.id.buttonm);
+        buttond = findViewById(R.id.buttond);
+        buttone = findViewById(R.id.buttone);
+        buttonC = findViewById(R.id.buttonC);
+        buttonpm = findViewById(R.id.buttonpm);
+        buttonmod = findViewById(R.id.buttonmod);
+        buttoncurly = findViewById(R.id.buttoncurly);
+        buttonequal = findViewById(R.id.buttone);
+        buttonclear = findViewById(R.id.buttonC);
+
+        button0.setOnClickListener(v -> appendNumber("0"));
+        button1.setOnClickListener(v -> appendNumber("1"));
+        button2.setOnClickListener(v -> appendNumber("2"));
+        button3.setOnClickListener(v -> appendNumber("3"));
+        button4.setOnClickListener(v -> appendNumber("4"));
+        button5.setOnClickListener(v -> appendNumber("5"));
+        button6.setOnClickListener(v -> appendNumber("6"));
+        button7.setOnClickListener(v -> appendNumber("7"));
+        button8.setOnClickListener(v -> appendNumber("8"));
+        button9.setOnClickListener(v -> appendNumber("9"));
+        buttondot.setOnClickListener(v -> appendDot());
+        buttonA.setOnClickListener(v -> handleOperator("+"));
+        buttonminus.setOnClickListener(v -> handleOperator("-"));
+        buttonm.setOnClickListener(v -> handleOperator("*"));
+        buttond.setOnClickListener(v -> handleOperator("/"));
+        buttonpm.setOnClickListener(v -> toggleSign());
+        buttonmod.setOnClickListener(v -> handleOperator("%"));
+        buttoncurly.setOnClickListener(v -> handleParentheses());
+        buttonequal.setOnClickListener(v -> calculate());
+        buttonclear.setOnClickListener(v -> clear());
+    }
+
+    private void appendNumber(String number) {
+        currentInput += number;
+        editTextNumberDecimal.setText(currentInput);
+    }
+
+    private void appendDot() {
+        if (!currentInput.contains(".")) {
+            currentInput += ".";
+            editTextNumberDecimal.setText(currentInput);
+        }
+    }
+
+    private void handleOperator(String operator) {
+        if (!currentInput.isEmpty()) {
+            num1 = Double.parseDouble(currentInput);
+            currentInput = "";
+            currentOperator = operator;
+        }
+    }
+
+    private void toggleSign() {
+        if (!currentInput.isEmpty()) {
+            double value = Double.parseDouble(currentInput);
+            value = -value;
+            currentInput = String.valueOf(value);
+            editTextNumberDecimal.setText(currentInput);
+        }
+    }
+
+    private void handleParentheses() {
+        // Implement parentheses functionality here if needed
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void calculate() {
+        if (!currentInput.isEmpty() && !currentOperator.isEmpty()) {
+            num2 = Double.parseDouble(currentInput);
+            double result = 0;
+            switch (currentOperator) {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    if (num2 != 0) {
+                        result = num1 / num2;
+                    } else {
+                        // Handle division by zero error
+                        editTextNumberDecimal.setText("Error");
+                        return;
+                    }
+                    break;
+                case "%":
+                    result = num1 % num2;
+                    break;
+            }
+            editTextNumberDecimal.setText(String.valueOf(result));
+            currentInput = String.valueOf(result);
+            currentOperator = "";
+        }
+    }
+
+    private void clear() {
+        currentInput = "";
+        currentOperator = "";
+        num1 = 0;
+        num2 = 0;
+        editTextNumberDecimal.setText("");
+    }
+}
+
